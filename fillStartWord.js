@@ -5,7 +5,7 @@ function fillStartWord(startWord, word) {
   let b = word;
   if(word == null || word == undefined ){
     return undefined;
-  }else if(b.startsWith(a)){ //หรือใช้ startsWith
+  }else if(b.startsWith(a)){ //หรือใช้ startsWith .
     return b;
   }else {
     return a+b;
