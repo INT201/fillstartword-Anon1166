@@ -1,17 +1,17 @@
-//const { template } = require('@babel/core')
+const { template } = require('@babel/core')
 
 function fillStartWord(startWord, word) {
   let a = startWord;
   let b = word;
   if(word == null || word == undefined ){
     return undefined;
-  }else if(b.startsWith(a)){ //หรือใช้ startsWith //includes.
+  }else if(b.startsWith(a)){   //หรือใช้ startsWith //includes.
     return b;
   }else {
     return a+b;
   }
 }
-//module.exports = fillStartWord
+module.exports = fillStartWord
 
 // function fillStartWord(startWord, word) {
 //   let fullWord;
@@ -27,3 +27,4 @@ function fillStartWord(startWord, word) {
 //       return fullWord;
 //   }
 // }
+
