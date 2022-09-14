@@ -5,12 +5,25 @@ function fillStartWord(startWord, word) {
   let b = word;
   if(word == null || word == undefined ){
     return undefined;
-  }else if(b.startsWith(a)){ //หรือใช้ startsWith .
+  }else if(b.startsWith(a)){ //หรือใช้ startsWith //includes
     return b;
   }else {
     return a+b;
   }
 }
 //module.exports = fillStartWord
-console.log(fillStartWord("first","firststep"));
 
+// function fillStartWord(startWord, word) {
+//   let fullWord;
+//   if (word == null||word == undefined) {
+//       fullWord = undefined;
+//       return fullWord;
+//   } else if (startWord === word.substr(0, startWord.length)) {
+//       fullword = word;
+//       return fullword;
+//   }
+//   else {
+//       fullWord = startWord + word;
+//       return fullWord;
+//   }
+// }
